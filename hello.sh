@@ -20,7 +20,18 @@ echo The name is $name #variable can be used with $symbol before it
 
 #for echoing on same line
  
-read -p "username: " user_var
-read -sp "password: " pass_var
-echo "username : $user_var"
-echo "password : $pass_var"
+# read -p "username: " user_var
+# read -sp "password: " pass_var
+# echo "username : $user_var"
+# echo "password : $pass_var"
+
+#arrays
+# echo "Enter names: "
+# read -a names
+# echo "names are ${names[0]} ${names[1]}"
+
+#built in variable for reply
+
+echo "names: "
+read
+echo $REPLY
