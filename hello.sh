@@ -37,4 +37,12 @@ echo The name is $name #variable can be used with $symbol before it
 # echo $REPLY
 
 #pass an argument
-echo $0 $1 $2 $3 #' > echo $1 $2 $3'
+#echo $0 $1 $2 $3 ' > echo $1 $2 $3'
+
+args=("$@")
+
+#echo ${args[0]} ${args[1]}
+#for printing all the arguments
+echo $@
+# no of arguments you passed
+echo $#
