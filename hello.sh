@@ -32,6 +32,9 @@ echo The name is $name #variable can be used with $symbol before it
 
 #built in variable for reply
 
-echo "names: "
-read
-echo $REPLY
+# echo "names: "
+# read
+# echo $REPLY
+
+#pass an argument
+echo $0 $1 $2 $3 #' > echo $1 $2 $3'
