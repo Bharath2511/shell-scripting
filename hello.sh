@@ -121,11 +121,32 @@
 # fi
 
 #OR operator
-age=11
+# age=11
 
-if [ $age -gt 12 -o $age -eq 23 ]
-then 
-  echo "valid age"
-else 
-  echo "invalid age"
-fi
+# if [ $age -gt 12 -o $age -eq 23 ]
+# then 
+#   echo "valid age"
+# else 
+#   echo "invalid age"
+# fi
+
+# arithemetic operator
+# num1=20
+# num2=25
+
+# sum=$((num1+num2))
+
+# echo $sum
+
+# decimal arithemetic
+#basic calculator(bc)
+
+echo 3.5+4.5 | bc
+echo "scale=2;20.5/5" | bc
+
+
+
+
+
+
+
