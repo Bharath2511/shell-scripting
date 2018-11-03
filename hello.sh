@@ -163,25 +163,29 @@
 #      echo "this vehicle is not for renting purpose"
 # esac
 
-echo -e "enter any character : \c"
-read value
+# echo -e "enter any character : \c"
+# read value
 
-case $value in
-    [a-z] )
-      echo "lower cased alphabet" ;;
-    [A-Z] )
-      echo "upper cased alphabet" ;;
-    [0-9] )
-      echo "numerical" ;;
-    ? ) 
-      echo "special character" ;;
-    * )
-      echo "unknown input" ;;
-esac
+# case $value in
+#     [a-z] )
+#       echo "lower cased alphabet" ;;
+#     [A-Z] )
+#       echo "upper cased alphabet" ;;
+#     [0-9] )
+#       echo "numerical" ;;
+#     ? ) 
+#       echo "special character" ;;
+#     * )
+#       echo "unknown input" ;;
+# esac
 
-
-
-
+#arrays
+os=('win' 'ubuntu' 'kali')
+os[2]="mac"
+echo ${os[@]}
+echo ${!os[@]}
+echo ${#os[@]}
+echo ${os[2]}
 
 
 
