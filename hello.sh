@@ -100,7 +100,13 @@ echo -e "enter the file name : \c"
 read file_name
 
 #if file exists or not
-if [ -e $file_name ]
+# -f for file exists and is a regular file or not
+# -d directory
+#  block file is a binary file like picture file video file -b
+# character file is normal text -c
+# -s for file is empty or not
+# -r -w -x read write and execute functions
+if [ -s $file_name ]
 then
   echo "$file_name found"
 else
