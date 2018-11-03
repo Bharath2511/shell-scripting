@@ -111,11 +111,21 @@
 
 #AND operator
 
-age=50
+# age=50
 
-if [ $age -gt 18 -a $age -lt 26 ]
-then
+# if [ $age -gt 18 -a $age -lt 26 ]
+# then
+#   echo "valid age"
+# else
+#   echo "age not valid"
+# fi
+
+#OR operator
+age=11
+
+if [ $age -gt 12 -o $age -eq 23 ]
+then 
   echo "valid age"
-else
-  echo "age not valid"
+else 
+  echo "invalid age"
 fi
