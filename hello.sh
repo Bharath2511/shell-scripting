@@ -208,4 +208,16 @@
 #   (( n++ ))
 # done
 
+#while loops sleep 
+n=1 
+
+while [ $n -le 3 ]
+do 
+ echo $n
+ ((n++))
+  #xterm &
+ #gnome-terminal &
+  #sleep 1
+done
+ 
 
