@@ -46,3 +46,11 @@ args=("$@")
 echo $@
 # no of arguments you passed
 echo $#
+
+#if statements
+# eq ne gt lt ge le
+count=5
+if [ $count -gt 4 ]
+then
+ echo "true"
+fi
