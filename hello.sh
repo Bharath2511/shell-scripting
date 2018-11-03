@@ -101,14 +101,21 @@ read file_name
 
 #if file exists or not
 # -f for file exists and is a regular file or not
+# -e exists or not
 # -d directory
 #  block file is a binary file like picture file video file -b
 # character file is normal text -c
 # -s for file is empty or not
 # -r -w -x read write and execute functions
-if [ -s $file_name ]
+if [ -f $file_name ]
 then
-  echo "$file_name found"
+    if [ -w $file_name ]
+    then
+       echo "Type some text data"
+       cat >> $file_name
+    else
+       echo "The file do not have write permission"
+    fi
 else
-  echo "$file_name not found"
+  echo "$file_name not exists"
 fi
