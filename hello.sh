@@ -141,15 +141,18 @@
 # decimal arithemetic
 #basic calculator(bc)
 
-echo 3.5+4.5 | bc
-echo "scale=2;20.5/5" | bc
+# echo 3.5+4.5 | bc
+# echo "scale=2;20.5/5" | bc
 
-#sqrt
-num=35.5
+# #sqrt
+# num=35.5
 
-echo "scale=2;sqrt($num)" |bc -l
-#for power
-echo 3^3 | bc -l
+# echo "scale=2;sqrt($num)" |bc -l
+# #for power
+# echo 3^3 | bc -l
+
+#case statement
+
 
 
 
