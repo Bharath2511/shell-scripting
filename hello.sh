@@ -152,17 +152,32 @@
 # echo 3^3 | bc -l
 
 #case statement
-vehicle=$1
+# vehicle=$1
 
-case vehicle in
-   "car" )
-      echo "the rent of the car is $80" ;;
-    "van" )
-      echo "the rent of the van id $100" ;;
+# case vehicle in
+#    "car" )
+#       echo "the rent of the car is $80" ;;
+#     "van" )
+#       echo "the rent of the van id $100" ;;
+#     * )
+#      echo "this vehicle is not for renting purpose"
+# esac
+
+echo -e "enter any character : \c"
+read value
+
+case $value in
+    [a-z] )
+      echo "lower cased alphabet" ;;
+    [A-Z] )
+      echo "upper cased alphabet" ;;
+    [0-9] )
+      echo "numerical" ;;
+    ? ) 
+      echo "special character" ;;
     * )
-     echo "this vehicle is not for renting purpose"
+      echo "unknown input" ;;
 esac
-
 
 
 
