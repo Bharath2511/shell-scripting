@@ -180,13 +180,32 @@
 # esac
 
 #arrays
-os=('win' 'ubuntu' 'kali')
-os[2]="mac"
-echo ${os[@]}
-echo ${!os[@]}
-echo ${#os[@]}
-echo ${os[2]}
+# os=('win' 'ubuntu' 'kali')
+# os[2]="mac"
+# echo ${os[@]}
+# echo ${!os[@]}
+# echo ${#os[@]}
+# echo ${os[2]}
+# unset os[3]
 
+# #it works for strings also
+# str="bharath"
+# #prints everything
+# echo ${str[@]}
+# #prints everything
+# echo ${str[0]}
+# #length
+# echo ${#str[@]}
 
+#while loops
+#loops are used to execute a list of commands repeatedly
+
+# n=1
+
+# while [ $n -le 10 ]
+# do 
+#   echo $n
+#   (( n++ ))
+# done
 
 
