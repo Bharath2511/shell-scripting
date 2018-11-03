@@ -50,7 +50,47 @@ echo $#
 #if statements
 # eq ne gt lt ge le
 count=5
-if [ $count -gt 4 ]
+#if [ $count -gt 4 ]
+# it is a convention to use comparision operators
+#with double parantheses
+if (( $count > 2 ))
 then
  echo "true"
+fi
+
+word="abc"
+
+if [ $word == "abc" ]
+then
+  echo 'condition is true'
+fi
+echo $word
+
+#when we use angle brackets we need to use double square brackets
+#for strings
+
+sword="a"
+
+if [[ $sword > "b" ]]
+then 
+  echo "true"
+else 
+  echo "condition is false"
+fi
+
+#comparision operators with int eq ne gt single square brack
+#angle brackets with int >< (())
+#strings angle comparision we use [[]] 
+
+#if elif else
+fork="a"
+
+if [[ $fork == "c" ]]
+then
+  echo "$fork == c"
+elif [[ $fork == "a" ]]
+then 
+  echo "$fork == a"
+else 
+  echo "none"
 fi
