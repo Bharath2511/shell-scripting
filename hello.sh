@@ -96,8 +96,8 @@
 # fi
 
 # file test operators
-echo -e "enter the file name : \c"
-read file_name
+# echo -e "enter the file name : \c"
+# read file_name
 
 #if file exists or not
 # -f for file exists and is a regular file or not
@@ -107,15 +107,15 @@ read file_name
 # character file is normal text -c
 # -s for file is empty or not
 # -r -w -x read write and execute functions
-if [ -f $file_name ]
+# 
+
+#AND operator
+
+age=50
+
+if [ $age -gt 18 -a $age -lt 26 ]
 then
-    if [ -w $file_name ]
-    then
-       echo "Type some text data"
-       cat >> $file_name
-    else
-       echo "The file do not have write permission"
-    fi
+  echo "valid age"
 else
-  echo "$file_name not exists"
+  echo "age not valid"
 fi
