@@ -209,15 +209,25 @@
 # done
 
 #while loops sleep 
-n=1 
+# n=1 
 
-while [ $n -le 3 ]
-do 
- echo $n
- ((n++))
-  #xterm &
- #gnome-terminal &
-  #sleep 1
-done
+# while [ $n -le 3 ]
+# do 
+#  echo $n
+#  ((n++))
+#   #xterm &
+#  #gnome-terminal &
+#   #sleep 1
+# done
  
+# read a file content in bash
+while read line
+do 
+ echo $line
+done < hello.sh
 
+#here -r is used to escape backslashes
+while IFS=" " read -r lines
+do
+ echo $lines
+done < hello.sh
