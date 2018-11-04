@@ -319,13 +319,13 @@ function hello() {
     echo "hello world"
 }
 
-quit() {
-    exit
+quit () {
+  echo $1 $2
 }
 
 hello
 
 echo "foo"
 
-quit
+quit I Quit
 
