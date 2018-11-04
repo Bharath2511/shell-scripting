@@ -280,16 +280,26 @@
 # done
 
 #select cases
-select name in mark john elon
+# select name in mark john elon
+# do
+#   case $name in
+#   mark )
+#     echo mark selected ;;
+#   john )
+#     echo john selected ;;
+#   elon )
+#     echo elon selected ;;
+#   * )
+#     echo please select one of the above ;;
+#   esac
+# done
+
+#break and continue
+for (( i=1; i<=10; i++ ))
 do
-  case $name in
-  mark )
-    echo mark selected ;;
-  john )
-    echo john selected ;;
-  elon )
-    echo elon selected ;;
-  * )
-    echo please select one of the above ;;
-  esac
+ if [ $i -gt 5 ]
+ then
+  break
+ fi
+ echo $i
 done
