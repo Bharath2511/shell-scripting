@@ -257,3 +257,17 @@
 # do
 #  echo $i
 # done
+
+for command in pwd ls date
+do
+ echo "......$command......."
+ $command
+done
+
+for file in *
+do
+ if [ -f $file ]
+ then
+  echo $file
+ fi
+done
