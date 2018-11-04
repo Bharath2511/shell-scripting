@@ -331,12 +331,38 @@
 
 #local variable
 
+# print() {
+#     local name=$1
+#     echo "name is $name"
+# }
+
+# name="tom"
+# echo "name is $name"
+
+# print "mark"
+
+#example of function
+
+# readonly
+
+var=24
+
+readonly var
+
+var=50
+
+echo "$var"
+
 print() {
-    local name=$1
-    echo "name is $name"
+    echo "Eat leaves"
 }
 
-name="tom"
-echo "name is $name"
+print 
 
-print "mark"
+#readonly -f print
+
+print() {
+    echo "Eat again"
+}
+
+print
