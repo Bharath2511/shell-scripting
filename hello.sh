@@ -234,10 +234,26 @@
 
 #until loops
 #the condition is false then only the commands are executed
-n=1
+# n=1
 
-until [ $n -ge 11 ]
-do
- echo $n
- (( n++ ))
-done
+# until [ $n -ge 11 ]
+# do
+#  echo $n
+#  (( n++ ))
+# done
+
+#for loop
+# for i in 1 2 3 4 5
+# do
+#  echo $i
+# done
+
+# for z in {0..10..2}
+# do
+#  echo $z
+# done
+
+# for (( i=0; i<5; i++ ))
+# do
+#  echo $i
+# done
