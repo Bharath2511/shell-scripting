@@ -345,24 +345,38 @@
 
 # readonly
 
-var=24
+# var=24
 
-readonly var
+# readonly var
 
-var=50
+# var=50
 
-echo "$var"
+# echo "$var"
 
-print() {
-    echo "Eat leaves"
-}
+# print() {
+#     echo "Eat leaves"
+# }
 
-print 
+# print 
 
-#readonly -f print
+# #readonly -f print
 
-print() {
-    echo "Eat again"
-}
+# print() {
+#     echo "Eat again"
+# }
 
-print
+# print
+
+#trap statement
+echo "pid is $$"
+while (( count<10 ))
+do
+sleep 4
+(( count++ ))
+echo $count
+done
+exit 0
+
+trap "echo exit command " 0
+echo "hello world"
+exit 0
