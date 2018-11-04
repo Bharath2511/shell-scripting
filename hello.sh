@@ -258,16 +258,38 @@
 #  echo $i
 # done
 
-for command in pwd ls date
-do
- echo "......$command......."
- $command
-done
+# for command in pwd ls date
+# do
+#  echo "......$command......."
+#  $command
+# done
 
-for file in *
+# for file in *
+# do
+#  if [ -f $file ]
+#  then
+#   echo $file
+#  fi
+# done
+
+#select loop
+#it gives us every name as menu preceeded by a number
+# select name in sunder satya elon steve
+# do
+#  echo "$name selected"
+# done
+
+#select cases
+select name in mark john elon
 do
- if [ -f $file ]
- then
-  echo $file
- fi
+  case $name in
+  mark )
+    echo mark selected ;;
+  john )
+    echo john selected ;;
+  elon )
+    echo elon selected ;;
+  * )
+    echo please select one of the above ;;
+  esac
 done
