@@ -303,3 +303,13 @@ do
  fi
  echo $i
 done
+
+#continue
+for (( i=2; i<=11; i++ ))
+do
+ if [ $i -eq 3 -o $i -eq 6 ]
+ then
+  continue
+ fi
+ echo $i
+done
