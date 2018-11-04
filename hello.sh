@@ -369,13 +369,18 @@
 
 #trap statement
 #SIGKILL and SIGSTOP not going to work
-trap "echo exit signal is detected" SIGINT
-echo "pid is $$"
-while (( count<10 ))
-do
-sleep 4
-(( count++ ))
-echo $count
-done
-exit 0
+# trap "echo exit signal is detected" SIGINT
+# echo "pid is $$"
+# while (( count<10 ))
+# do
+# sleep 4
+# (( count++ ))
+# echo $count
+# done
+# exit 0
 
+
+#0=success 2=SIGINT(ctrl+c) 15=sigterm(ctrl+z)
+# echo "$$"
+# file=./delete
+# trap "rm -f $file; exit" 0 2 15
