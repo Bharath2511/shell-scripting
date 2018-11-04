@@ -221,13 +221,23 @@
 # done
  
 # read a file content in bash
-while read line
-do 
- echo $line
-done < hello.sh
+# while read line
+# do 
+#  echo $line
+# done < hello.sh
 
-#here -r is used to escape backslashes
-while IFS=" " read -r lines
+# #here -r is used to escape backslashes
+# while IFS=" " read -r lines
+# do
+#  echo $lines
+# done < hello.sh
+
+#until loops
+#the condition is false then only the commands are executed
+n=1
+
+until [ $n -ge 11 ]
 do
- echo $lines
-done < hello.sh
+ echo $n
+ (( n++ ))
+done
