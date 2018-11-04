@@ -315,17 +315,28 @@
 # done
 
 #functions
-function hello() {
-    echo "hello world"
+# function hello() {
+#     echo "hello world"
+# }
+
+# quit () {
+#   echo $1 $2
+# }
+
+# hello
+
+# echo "foo"
+
+# quit I Quit
+
+#local variable
+
+print() {
+    local name=$1
+    echo "name is $name"
 }
 
-quit () {
-  echo $1 $2
-}
+name="tom"
+echo "name is $name"
 
-hello
-
-echo "foo"
-
-quit I Quit
-
+print "mark"
