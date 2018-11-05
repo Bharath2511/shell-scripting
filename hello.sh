@@ -165,7 +165,7 @@
 
 # echo -e "enter any character : \c"
 # read value
-
+#cases
 # case $value in
 #     [a-z] )
 #       echo "lower cased alphabet" ;;
