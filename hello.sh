@@ -384,3 +384,8 @@
 # echo "$$"
 # file=./delete
 # trap "rm -f $file; exit" 0 2 15
+
+while IFS=" " read -r lines
+do
+ echo $lines
+done < 18.sh
